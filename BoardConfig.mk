@@ -49,7 +49,7 @@ TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := onyx_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/onyx
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN := /home/george/roms/screwd/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # Fixes Wifi-Mobile Data toggle issue
@@ -180,9 +180,6 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 #TW_INCLUDE_CRYPTO := true
 #TW_NO_USB_STORAGE := true
 #TW_TARGET_USES_QCOM_BSP := true
-
-# RIL
-TARGET_RIL_VARIANT := caf
 
 # RPC
 TARGET_NO_RPC := true
